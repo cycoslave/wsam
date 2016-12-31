@@ -1,0 +1,24 @@
+Wicked Software Application Manager 
+------------------------------------
+ WSAM is a framework that focus on easy of use and flexibility. It is mainly built of PHP,
+ but also has some Javascript in order to fancy up the display and handle AJAX queries.
+------------------------------------
+version: 1.0.0
+dev site: http://wsam.wcksoft.com
+------------------------------------
+
+
+Todo list
+---------
+- add cli control system
+- add new webOS' AJAX methods
+- add default page
+- change package management system so that
+- add openssl abstract layer
+- site state: online, offline, maintenance.
+- spawn http request into something like routes (check oscp)
+- add error handling and exceptions
+- allow the possiblity to use XML or JSON
+- make use of php namespace
+- allow the possibility for the framework to build the database
+- make sure the framework is ipv6 compliant

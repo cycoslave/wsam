@@ -1,7 +1,7 @@
 <?php   
    $content = "";
    $debug = TRUE;
-   $debug_array = TRUE;
+   $debug_array = FALSE;
    if ($debug) { 
     if ($debug_array) {
      $content .= "Got a resquest.<br>".var_export($_SERVER, TRUE);

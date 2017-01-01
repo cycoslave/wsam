@@ -23,5 +23,4 @@ Todo list
 - allow the possibility for the framework to build the database
 - make sure the framework is ipv6 compliant
 - add debugging features
-- add autoloading features
 - revamp the whole wsam system to reflect shift towards framework

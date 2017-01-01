@@ -3,11 +3,20 @@
  // --> Desc.: This is the mothership, where most of the magic occurs.
  // (c) 2011-2017 Wicked Software
 
+ namespace wsam\core;
+
  class wsam { 
   private $pkg = array();
  
-  function __construct() {
+  function __construct($mode=FALSE) {
    $this->init();
+   if ($mode == "web") {
+    $this->pkg['mode'] = "web";
+   } elseif ($mode == "console") {
+    $this->pkg['mode'] = "console";
+   } else {
+    $this->pkg['mode'] = FALSE;
+   }
   }
  	
   function __destruct() {
@@ -27,7 +36,11 @@
   private function loadconfig() {
   }
 
-
+  private function loaddependencies() {
+  	if ($this->pkg['mode'] == "web") {
+  	} else if ($this->pkg['mode'] == "console") {
+  	}
+  }
 
  }
 ?>

@@ -1,7 +1,10 @@
-<?php   
+<?php
+
+ require __DIR__."/../src/wsam/core/autoload.php";
+ 
    $content = "";
    $debug = TRUE;
-   $debug_array = TRUE;
+   $debug_array = FALSE;
    if ($debug) { 
     if ($debug_array) {
      $content .= "Got a resquest.<br>".var_export($_SERVER, TRUE);
@@ -17,7 +20,8 @@
      
     } 
    }
-   //print_r($_SERVER);
+   
+   $query = new wsam\web\query();
 
    echo $content; 
 ?>

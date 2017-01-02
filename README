@@ -19,7 +19,7 @@ Todo list
 - add openssl abstract layer
 - site state: online, offline, maintenance.
 - spawn http request into something like routes (check oscp)
-- add error handling and exceptions
+- add error handling and exceptions (set_error_handler)
 - allow the possiblity to use XML or JSON
 - make use of php namespace
 - allow the possibility for the framework to build the database

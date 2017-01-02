@@ -1,21 +1,21 @@
-<?php 
- // Wicked Software Application Manager - Kernel class 1.0.0
- // --> Desc.: This is the mothership, where most of the magic occurs.
- // (c) 2011-2017 Wicked Software
+<?php
+ //  Template 0.2.0
+ // --> Desc.: pkg
+ // (c) 2013-2017 Wicked Software 
 
- namespace wsam\web;
-
- class query { 
-  const VER = "1.0.0";
+ class pkg {
+  private $pkg = array();
+  
+  const VER = "0.1.0";
   const CREATEDON = "01/01/2017";
   const DESC = "this package does something.";
   const HASDB = FALSE;
- 
-  function __construct() { 
-   $this->init();
+
+  function __construct () {
+  	$this->init();
   }
- 	
-  function __destruct() { }  
+
+  function __destruct() { }
 
   private function init() { }
 

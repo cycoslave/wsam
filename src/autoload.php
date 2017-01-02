@@ -1,10 +1,11 @@
 <?php
-
+ define('WSAM_LAUNCH', microtime(true));
+ 
  function __autoload($name) {
   $file = "";
   $namespace = "";
 
-  $path = __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."..";
+  $path = __DIR__;
 
   if (($lastpos = strripos($name, "\\")) !== FALSE) {
    $namespace = substr($name, 0, $lastpos);

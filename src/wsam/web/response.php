@@ -6,24 +6,27 @@
  namespace wsam\web;
 
  class query { 
- 
+  const VER = "1.0.0";
+  const CREATEDON = "01/01/2017";
+  const DESC = "this package does something.";
+  const HASDB = FALSE;
+   
   function __construct() {
   }
  	
   function __destruct() {
   }  
 
-  private function init() {
-  	$this->pkg['ver'] = "1.0.0";
-  	$this->pkg['creationdate'] = "31/12/2016";
-  	$this->pkg['name'] = "WSAM";
-  	$this->pkg['desc'] = "Manages packages from an application built with the framework.";
-  	$this->pkg['loadedpkgs'] = array();
-  	$this->pkg['loadedpkgs'][0] = 1;
-  	$this->pkg['loadedpkgs'][1] = "wsam";
-  	$this->pkg['config'] = "/web/wsam/etc/app.conf";
+  private function init() { }
+
+  static function ver() { return self::VER; }
+  static function name() { return get_class(); }
+  static function createdon() { return self::CREATEDON; }
+  static function desc() { return self::DESC; }
+  static function pkg_hasdb() { return self::HASDB; }
+  
+  static function build() {
+  	return "test";
   }
-
-
  }
 ?>

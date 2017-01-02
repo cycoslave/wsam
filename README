@@ -6,6 +6,8 @@ Wicked Software Application Manager
 version: 1.0.0
 dev site: http://wsam.wcksoft.com
 ------------------------------------
+requirements: PHP 5.4+
+              PHP PDO
 
 
 Todo list

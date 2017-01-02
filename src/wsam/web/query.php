@@ -17,13 +17,18 @@
  	
   function __destruct() { }  
 
-  private function init() { }
+  private function init() {
+  }
 
   static function ver() { return self::VER; }
   static function name() { return get_class(); }
   static function createdon() { return self::CREATEDON; }
   static function desc() { return self::DESC; }
   static function pkg_hasdb() { return self::HASDB; }
+  
+  private function gatherdata() {
+  	
+  }
 
  }
 ?>

@@ -26,3 +26,4 @@ Todo list
 - make sure the framework is ipv6 compliant
 - add debugging features
 - revamp the whole wsam system to reflect shift towards framework
+- implement http error reading and custom pages when encountering an http error.
